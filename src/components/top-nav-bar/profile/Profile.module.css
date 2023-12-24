@@ -1,0 +1,32 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--main-bg-color);
+}
+
+.h4 {
+    display: flex;
+    border-radius: 100%;
+    width: 41px;
+    height: 41px;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-color: var(--blue-color);
+    margin-right: 20px;
+    color: var(--primary-color);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+.h5 {
+    color: var(--primary-unavailable-text-color);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    white-space: nowrap;
+}

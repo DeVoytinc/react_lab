@@ -1,0 +1,58 @@
+.headerColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.headerRow:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 87px;
+}
+
+.imgBox {
+  width: 693px;
+  height: 598px;
+  margin-right: 100px;
+}
+
+.pochka {
+  width: 937.951px;
+  height: 671.352px;
+  position: absolute;
+  left: -20%;
+  top: 20%;
+  z-index: 0;
+}
+
+.dotsRight {
+  width: 13%;
+  height: 11%;
+  position: absolute;
+  left: -9%;
+  top: 10%
+}
+
+
+.dotsLeft {
+  width: 13%;
+  height: 11%;
+  position: absolute;
+  left: -9%;
+  bottom: 10%
+}
+
+.dotsRight2 {
+  width: 23%;
+  height: 21%;
+  position: absolute;
+  right: -6%;
+  top: 6%
+}
