@@ -4,20 +4,51 @@ import TopNavBar from './components/top-nav-bar/main/TopNavBar'
 import Profile from './components/top-nav-bar/profile/Profile'
 import OutlinedButton from './components/Common/OutlinedButton';
 import LeadingHealthcareProviders from './components/leading-healthcare-providers';
-
+import MobileApp from './components/our-mobile-apps/MobileApp';
+import SliderBar from './components/testimonials';
+import OurServices from './components/our-services/main/OurServices';
+import ServiceCard from './components/our-services/service-card/ServiceCard';
 
 import headerImage from "./assets/header.png";
 import healtcare from "./assets/healtcare.png";
-import OurServices from './components/our-services/main/OurServices';
-import ServiceCard from './components/our-services/service-card/ServiceCard';
+import edward from "./assets/avatars/edward.png";
+
 import search from "./assets/our-services/search.svg";
 import pharmacy from "./assets/our-services/pharmacy.svg";
 import details from "./assets/our-services/details.svg";
 import consultation from "./assets/our-services/consultation.svg";
 import emergency from "./assets/our-services/emergency.svg";
 import tracking from "./assets/our-services/tracking.svg";
+import Footer from './components/footer';
+
+
 
 function App() {
+
+
+  const customers = [
+    {
+      name: "Edward Newgate",
+      job: "Founder Circle",
+      review:
+        '"Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely"',
+      img: edward,
+    },
+    {
+      name: "Edward Newgate",
+      job: "Developer",
+      review: "Edward - developer",
+      img: edward,
+    },
+    {
+      name: "Edward Newgate",
+      job: "Developer",
+      review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      img: edward,
+    },
+  ];
+
+
   return (
     <>
      <div className={classes.padding_block}>
@@ -91,7 +122,23 @@ function App() {
           ]}
           img={healtcare}
         />
+         <MobileApp
+          arr={[
+            "Download our mobile apps",
+            "Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely",
+            "Download  🠗",
+          ]}
+          img={healtcare}
+        />
+        <SliderBar
+          arr={customers}
+          children={undefined}
+        ></SliderBar>
+
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }
