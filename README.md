@@ -1,6 +1,6 @@
 # Лабораторная работа Web(React)
 ## Versions
-Node.js v18.16.0.
+Node.js v18.16.0.   
 npm 9.5.1
 
 ## Screenshot
