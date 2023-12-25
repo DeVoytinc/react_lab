@@ -8,10 +8,8 @@ import MobileApp from './components/our-mobile-apps/MobileApp';
 import SliderBar from './components/testimonials';
 import OurServices from './components/our-services/main/OurServices';
 import ServiceCard from './components/our-services/service-card/ServiceCard';
-
-import headerImage from "./assets/header.png";
-import healtcare from "./assets/healtcare.png";
-import edward from "./assets/avatars/edward.png";
+import Footer from './components/footer';
+import LastArticle from './components/last-article';
 
 import search from "./assets/our-services/search.svg";
 import pharmacy from "./assets/our-services/pharmacy.svg";
@@ -19,7 +17,15 @@ import details from "./assets/our-services/details.svg";
 import consultation from "./assets/our-services/consultation.svg";
 import emergency from "./assets/our-services/emergency.svg";
 import tracking from "./assets/our-services/tracking.svg";
-import Footer from './components/footer';
+
+import headerImage from "./assets/header.png";
+import healtcare from "./assets/healtcare.png";
+import edward from "./assets/avatars/edward.png";
+
+import article1 from "./assets/articles/article1.png";
+import article2 from "./assets/articles/article2.png";
+import article3 from "./assets/articles/article3.png";
+
 
 
 
@@ -45,6 +51,28 @@ function App() {
       job: "Developer",
       review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       img: edward,
+    },
+  ];
+
+
+  const articles = [
+    {
+      title: "Disease detection, check up in the laboratory",
+      subtitle:
+        "In this case, the role of the health laboratory is very important to do a disease detection...",
+      img: article1,
+    },
+    {
+      title: "EHerbal medicines that are safe for consumption",
+      subtitle:
+        "Herbal medicine is very widely used at this time because of its very good for your health...",
+      img: article2,
+    },
+    {
+      title: "Natural care for healthy facial skin",
+      subtitle:
+        "A healthy lifestyle should start from now and also for your skin health. There are some...",
+      img: article3,
     },
   ];
 
@@ -130,10 +158,17 @@ function App() {
           ]}
           img={healtcare}
         />
+
         <SliderBar
           arr={customers}
           children={undefined}
         ></SliderBar>
+
+        <LastArticle arr={articles} />
+
+        <div className={classes.outlinedButton_viewAll}>
+          <OutlinedButton text="View all" />
+        </div>
 
       </div>
       <footer>
