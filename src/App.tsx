@@ -41,15 +41,24 @@ function App() {
       img: edward,
     },
     {
-      name: "Edward Newgate",
-      job: "Developer",
-      review: "Edward - developer",
+      name: "Edward Newgate 2",
+      job: "Founder Circle 2",
+      review:
+        '"2 2 2 2 2 Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely"',
       img: edward,
     },
     {
-      name: "Edward Newgate",
-      job: "Developer",
-      review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      name: "Edward Newgate 3",
+      job: "Founder Circle 2",
+      review:
+        '"3 3 3 3 3 Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely"',
+      img: edward,
+    },
+    {
+      name: "Edward Newgate 4",
+      job: "Founder Circle 2",
+      review:
+        '"4 4 4 4 4 Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely"',
       img: edward,
     },
   ];

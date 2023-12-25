@@ -1,6 +1,8 @@
 import classes from "./OurServices.module.css";
 import React from "react";
 
+import decor from "./../../../assets/decoration/curvegeometry.svg";
+
 interface IOurServices {
   children: React.ReactNode;
 }
@@ -8,6 +10,9 @@ interface IOurServices {
 const TextWithDivider: React.FC<IOurServices> = ({ children }) => {
   return (
     <div className={classes.divider_block}>
+      <div className={classes.decorbox}>
+        <img className={classes.decor} src={decor} />
+      </div>
       <h1 className={classes.title_text}>Our services</h1>
       <div className={classes.divider}></div>
       <h2 className={classes.subtitle_text}>
