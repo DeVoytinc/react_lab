@@ -23,36 +23,24 @@
   margin-right: 100px;
 }
 
-.pochka {
-  width: 937.951px;
-  height: 671.352px;
-  position: absolute;
-  left: -20%;
-  top: 20%;
-  z-index: 0;
+footer {
+  width: 100%;
+  background: var(--background-color-box);
 }
 
-.dotsRight {
-  width: 13%;
-  height: 11%;
-  position: absolute;
-  left: -9%;
-  top: 10%
+.padding_block {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.outlinedButton_learnMore {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
 }
 
-
-.dotsLeft {
-  width: 13%;
-  height: 11%;
-  position: absolute;
-  left: -9%;
-  bottom: 10%
-}
-
-.dotsRight2 {
-  width: 23%;
-  height: 21%;
-  position: absolute;
-  right: -6%;
-  top: 6%
+.outlinedButton_viewAll {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15%;
 }

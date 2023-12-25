@@ -1,42 +1,40 @@
 #root {
   margin: 0;
-  padding-left: 0%;
-  padding-right: 0%;
-  text-align: center;
   width: 100%;
   background-color: var(--main-bg-color);
 }
 :root {
+  --primary-color: rgba(255, 255, 255, 1);
   --primary-text-color: rgba(0, 0, 0, 1);
-  --primary-unavailable-text-color:rgba(31, 21, 52, 1);
-  --slider-card-color: rgba(255, 255, 255, 0.90);
+  --primary-not-selected-text-color: rgba(31, 21, 52, 1);
   --secondary-text-color: rgba(125, 121, 135, 1);
   --main-bg-color: rgba(255, 255, 255, 1);
-  --primary-color: rgba(255, 255, 255, 1);
-  
-  --on-primary-color:rgba(255, 255, 255, 1);
+
+  --on-primary-color: rgba(255, 255, 255, 1);
   --on-secondary-text-color: rgba(255, 255, 255, 0.9);
 
   --dot-color: rgba(91, 155, 243, 1);
-  --unavailable-arrow-color:rgba(69, 143, 246, 1);
-  --button-color: #458FF6;
-  --primary-color-hover: #646cff;
+  --arrow-not-selected-color: rgba(69, 143, 246, 1);
+  --button-color: #458ff6;
+  --primary-color-hover: #555555;
 
   --primary-top-nav-color: rgba(31, 21, 52, 1);
-  --primary-unavailable-top-nav-color: rgba(31, 21, 52, 0.5);
+  --primary-not-selected-top-nav-color: rgba(31, 21, 52, 0.5);
 
   --blue-color: rgba(69, 143, 246, 1);
 
-  --divider-color: #000;
+  --card-background: rgba(255, 255, 255, 1);
+  --card-shadow: rgba(229, 233, 246, 0.4);
 
-  --card-color: #FFF;
-  --card-shadow: rgba(229, 233, 246, 0.40);
+  --background-color-box: linear-gradient(215deg, #67c3f3 0%, #5a98f2 100%);
+
+  --logo-name-text-color: rgba(35, 51, 72, 1);
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
 
   color-scheme: light dark;
-  color: var (--primary-color);
+  color: var(--primary-color);
   background-color: var(--main-bg-color);
 
   font-synthesis: none;
@@ -53,26 +51,20 @@ body {
   min-height: 100vh;
 }
 
-header{
+header {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   position: relative;
-  padding: 0% 5%;
 }
 
-
-
-h1, h2, h3, h4, h5, h6, button {
-  font-family: 'IBM Plex Sans Hebrew', sans-serif;
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-family: 'Mulish', sans-serif;
-  font-family: 'Roboto', sans-serif;
-}
-
-footer {
-  margin-top: 10%;
+h1,h2,h3,h4,h5,h6,
+button {
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (prefers-color-scheme: light) {

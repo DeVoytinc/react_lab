@@ -8,7 +8,7 @@ interface ITopNav {
   
   const TopNavBar: React.FC<ITopNav> = ({ arr }) => {
     return (
-      <div className={classes.topNavBar}>
+      <div className={classes.topNav}>
         <NavButton _enabled={true} text={arr[0]}></NavButton>
         <NavButton _enabled={false} text={arr[1]}></NavButton>
         <NavButton _enabled={false} text={arr[2]}></NavButton>
