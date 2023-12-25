@@ -2,17 +2,20 @@ import classes from './App.module.css'
 import HeaderText from './components/header/HeaderText'
 import TopNavBar from './components/top-nav-bar/main/TopNavBar'
 import Profile from './components/top-nav-bar/profile/Profile'
+import OutlinedButton from './components/Common/OutlinedButton';
+import LeadingHealthcareProviders from './components/leading-healthcare-providers';
 
-import headerImage from "./assets/header1.png";
+
+import headerImage from "./assets/header.png";
+import healtcare from "./assets/healtcare.png";
 import OurServices from './components/our-services/main/OurServices';
 import ServiceCard from './components/our-services/service-card/ServiceCard';
-import search from "./assets/our-services/search.png";
-import diagram_docs from "./assets/our-services/diagram_docs.png";
-import docs from "./assets/our-services/docs.png";
-import med_baggage from "./assets/our-services/med_baggage.png";
-import person_docs from "./assets/our-services/person_docs.png";
-import pills from "./assets/our-services/pills.png";
-import OutlinedButton from './components/Common/OutlinedButton';
+import search from "./assets/our-services/search.svg";
+import pharmacy from "./assets/our-services/pharmacy.svg";
+import details from "./assets/our-services/details.svg";
+import consultation from "./assets/our-services/consultation.svg";
+import emergency from "./assets/our-services/emergency.svg";
+import tracking from "./assets/our-services/tracking.svg";
 
 function App() {
   return (
@@ -54,32 +57,40 @@ function App() {
           <ServiceCard
             title="Online pharmacy"
             subtitle="Buy  your medicines with our mobile application with a simple delivery system"
-            logo={search}
+            logo={pharmacy}
           />
           <ServiceCard
             title="Consultation"
             subtitle="Free consultation with our trusted doctors and get the best recomendations"
-            logo={search}
+            logo={consultation}
           />
           <ServiceCard
             title="Details info"
             subtitle="Free consultation with our trusted doctors and get the best recomendations"
-            logo={search}
+            logo={details}
           />
           <ServiceCard
             title="Emergency care"
             subtitle="You can get 24/7 urgent care for yourself or your children and your lovely family"
-            logo={search}
+            logo={emergency}
           />
           <ServiceCard
             title="Tracking"
             subtitle="Track and save your medical history and health data "
-            logo={search}
+            logo={tracking}
           />
         </OurServices>
         <div className={classes.outlinedButton_learnMore}>
           <OutlinedButton text="Learn more" />
         </div>
+        <LeadingHealthcareProviders
+          arr={[
+            "Leading healthcare providers",
+            "We provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver",
+            "Learn more",
+          ]}
+          img={healtcare}
+        />
       </div>
     </>
   )
