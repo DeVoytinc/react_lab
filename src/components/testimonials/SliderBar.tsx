@@ -79,7 +79,7 @@ const SliderBar: React.FC<ISliderBar> = ({ arr, children }) => {
                     ←
                 </button>
 
-                {arr.map((item, index) => (
+                {arr.map((_item, index) => (
                     <div
                         key={index}
                         className={`${classes.dot} ${index === currentIndex ? classes.active_dot : ""

@@ -25,12 +25,18 @@ import edward from "./assets/avatars/edward.png";
 import article1 from "./assets/articles/article1.png";
 import article2 from "./assets/articles/article2.png";
 import article3 from "./assets/articles/article3.png";
+import { useState } from 'react';
 
 
 
 
 function App() {
 
+  const [showAll, setShowAll] = useState(false);
+
+  const handleButtonViewAll = () => {
+    setShowAll(!showAll);
+  }
 
   const customers = [
     {
@@ -88,8 +94,8 @@ function App() {
 
   return (
     <>
-     <div className={classes.padding_block}>
-     <header className={classes.header}>
+      <div className={classes.padding_block}>
+        <header className={classes.header}>
           <div className={classes.headerRow}>
             <Profile name="T" />
             <TopNavBar
@@ -159,7 +165,7 @@ function App() {
           ]}
           img={healtcare}
         />
-         <MobileApp
+        <MobileApp
           arr={[
             "Download our mobile apps",
             "Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely",
@@ -173,10 +179,10 @@ function App() {
           children={undefined}
         ></SliderBar>
 
-        <LastArticle arr={articles} />
+        <LastArticle arr={articles} isAll={showAll}/>
 
         <div className={classes.outlinedButton_viewAll}>
-          <OutlinedButton text="View all" />
+          <OutlinedButton text={!showAll ? "View all" : "Hide"} onClick={handleButtonViewAll}/>
         </div>
 
       </div>
