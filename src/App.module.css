@@ -1,0 +1,46 @@
+.headerColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.headerRow:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 87px;
+}
+
+.imgBox {
+  width: 693px;
+  height: 598px;
+  margin-right: 100px;
+}
+
+footer {
+  width: 100%;
+  background: var(--background-color-box);
+}
+
+.padding_block {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.outlinedButton_learnMore {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.outlinedButton_viewAll {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15%;
+}
